@@ -118,17 +118,21 @@
             </div>
         </div>
         <div class="pages">
-            <Page :total="100"  show-total  :current="2" />
+            <Paganization :total="101" :limit="15"></Paganization>
 
         </div>
     </div>
 </template>
 <script>
+import Paganization from './../../components/paganization/paganization.vue'
 import './index.less'
 export default {
   data () {
     return {
     }
+  },
+  components: {
+    Paganization
   },
   methods: {
     handleStart () {
@@ -139,9 +143,9 @@ export default {
     }
   },
   mounted () {
-    $('.ivu-page-total').html('总数:100')
-    $('.ivu-page-prev').before(`<li class="ivu-page-item ivufirst" title="首页" > <a>首页</a></li>`)
-    $('.ivu-page-next').after(`<li class="ivu-page-item ivulast" title="末页" > <a>末页</a></li>`)
+    // $('.ivu-page-total').html('总数:100')
+    // $('.ivu-page-prev').before(`<li class="ivu-page-item ivufirst" title="首页" > <a>首页</a></li>`)
+    // $('.ivu-page-next').after(`<li class="ivu-page-item ivulast" title="末页" > <a>末页</a></li>`)
   }
 }
 </script>
