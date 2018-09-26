@@ -1,0 +1,34 @@
+.centerContent {
+  background: url('image/dabj.png') no-repeat center center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.sideLeft {
+  width: 200px;
+}
+.sideRight {
+  width: 934px;
+  margin-left: 20px;
+}

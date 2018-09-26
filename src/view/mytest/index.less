@@ -1,0 +1,185 @@
+.testBox{
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    .testHeader{
+        border-bottom: 1px solid rgba(220,220,220,1);
+        width: 71%;
+        padding-bottom: 10px;
+        div{
+            span.useshu{
+                font-size: 30px;
+                font-weight: bolder;
+                color:#0F93DF
+            }
+            b{
+                font-size:24px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(69,69,69,1);
+                font-weight: normal;
+                margin-left: 20px;
+            }
+        }
+        
+    }
+    div.testsAll{
+        margin-top:50px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        div.testList{
+            width:70%;
+            // float: left;
+            p{
+                text-align: center;
+                font-size:24px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                // margin-top:77px;
+            }
+            .testLists{
+                p{
+                    text-align: left;
+                    font-size:16px;
+                    font-family:MicrosoftYaHei;
+                    font-weight:400;
+                    color:rgba(51,51,51,1);
+                    margin-bottom: 15px;
+                }
+                .exam-form{
+                    list-style: none;
+                    li{
+                        font-size:16px;
+                        font-family:MicrosoftYaHei;
+                        font-weight:400;
+                        color:rgba(51,51,51,1);
+                        label{
+                            padding-left:10px;
+                        }
+                    }
+                }
+            }
+        } 
+        div.testNum{
+            // float: right;
+            width:24%;
+            margin-top:-95px;
+            .allShow{
+                p{
+                    border-bottom: 1px solid rgba(220,220,220,1);
+                    padding-bottom: 13px;
+                    font-size:20px;
+                    margin-bottom: 20px;
+                    font-family:MicrosoftYaHei;
+                    font-weight:400;
+                    color:rgba(69,69,69,1);
+                }
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li{
+                        list-style: none;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: #ddd;
+                        text-align: center;
+                        line-height: 32px;
+                        font-size:16px;
+                        font-family:PingFang-SC-Bold;
+                        font-weight:bold;
+                        color:rgba(160,155,155,1);
+                        margin-right: 15px;
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+            .time{
+                margin-top: 50px;
+                text-align: center;
+                font-size:16px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(234,0,0,1);
+                span{
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+                button{
+                    display: block;
+                    margin:10px auto;
+                    span{
+                        margin-left: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+[class*="icheck-"] {min-height: 22px;margin-top: 6px !important;margin-bottom: 6px !important;padding-left: 0px;}
+.icheck-inline {display: inline-block;}
+.icheck-inline+.icheck-inline {margin-left: .75rem;margin-top: 6px;}
+[class*="icheck-"]>label {padding-left: 29px !important;min-height: 22px;line-height: 22px;display: inline-block;position: relative;vertical-align: top;margin-bottom: 0;font-weight: normal;cursor: pointer;}
+[class*="icheck-"]>input:first-child {position: absolute !important;opacity: 0;margin: 0;}
+[class*="icheck-"]>input:first-child:disabled {cursor: default;}
+
+[class*="icheck-"]>input:first-child+label::before,
+[class*="icheck-"]>input:first-child+input[type="hidden"]+label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #D3CFC8;
+	border-radius: 0px;
+    margin-left: -27px;
+    margin-top:3px;
+}
+
+[class*="icheck-"]>input:first-child:checked+label::after,
+[class*="icheck-"]>input:first-child:checked+input[type="hidden"]+label::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 9px;
+	border: solid 2px #fff;
+	border-left: none;
+	border-top: none;
+	transform: translate(7.75px, 4.5px) rotate(45deg);
+	-ms-transform: translate(7.75px, 4.5px) rotate(45deg);
+}
+
+[class*="icheck-"]>input[type="radio"]:first-child+label::before,
+[class*="icheck-"]>input[type="radio"]:first-child+input[type="hidden"]+label::before {
+	border-radius: 50%;
+}
+
+[class*="icheck-"]>input:first-child:not(:checked):not(:disabled):hover+label::before,
+[class*="icheck-"]>input:first-child:not(:checked):not(:disabled):hover+input[type="hidden"]+label::before {
+	border-width: 2px;
+}
+
+[class*="icheck-"]>input:first-child:disabled+label,
+[class*="icheck-"]>input:first-child:disabled+input[type="hidden"]+label,
+[class*="icheck-"]>input:first-child:disabled+label::before,
+[class*="icheck-"]>input:first-child:disabled+input[type="hidden"]+label::before {
+	pointer-events: none;
+	cursor: default;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: .65;
+}
+.icheck-primary>input:first-child:not(:checked):not(:disabled):hover+label::before,
+.icheck-primary>input:first-child:not(:checked):not(:disabled):hover+input[type="hidden"]+label::before {	border-color: #0F93DF;}
+.icheck-primary>input:first-child:checked+label::before,
+.icheck-primary>input:first-child:checked+input[type="hidden"]+label::before {	background-color: #0F93DF;	border-color: #0F93DF;}
